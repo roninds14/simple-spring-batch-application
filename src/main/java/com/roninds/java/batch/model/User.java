@@ -8,6 +8,7 @@ import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,11 +16,12 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @Entity
+@Table(name = "\"user\"")
 public class User {
 
     @Id
     private Integer id;
     private String name;
     private String dept;
-    private Integer Salary;
+    private Integer salary;
 }
