@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 @Getter
 @Setter
 @Entity
