@@ -34,7 +34,7 @@ public class LoadControllerTest {
                 )
         );
 
-        getController().setLoadService(loadService);
+        getController().setLoadService(getLoadService());
     }
 
     @Test

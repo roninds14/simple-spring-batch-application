@@ -1,5 +1,6 @@
 package com.roninds.java.batch.service;
 
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.BatchStatus;
 import org.springframework.batch.core.Job;
@@ -18,6 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Slf4j
+@Setter
 @Service
 public class LoadService {
 
@@ -32,6 +34,7 @@ public class LoadService {
             JobExecutionAlreadyRunningException,
             JobParametersInvalidException,
             JobRestartException {
+
         Map<String, JobParameter> map = new HashMap<>();
         map.put("time", new JobParameter(System.currentTimeMillis()));
 
