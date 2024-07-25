@@ -2,6 +2,7 @@ package com.roninds.java.batch.controller;
 
 import com.roninds.java.batch.service.LoadService;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.BatchStatus;
 import org.springframework.batch.core.Job;
@@ -23,6 +24,7 @@ import java.util.Map;
 
 @Slf4j
 @Getter
+@Setter
 @RestController
 @RequestMapping("/load")
 public class LoadController {
