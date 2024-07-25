@@ -29,8 +29,9 @@ public class LoadControllerTest {
         setController(
                 Mockito.mock(
                         LoadController.class,
-                        Mockito.withSettings().useConstructor(
-                        ).defaultAnswer(Mockito.CALLS_REAL_METHODS)
+                        Mockito.withSettings()
+                                .useConstructor()
+                                .defaultAnswer(Mockito.CALLS_REAL_METHODS)
                 )
         );
 

@@ -2,6 +2,7 @@ package com.roninds.java.batch.batch;
 
 import com.roninds.java.batch.model.User;
 import com.roninds.java.batch.repository.UserRepository;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Setter
 @Slf4j
 @Component
 public class DBWriter implements ItemWriter<User> {

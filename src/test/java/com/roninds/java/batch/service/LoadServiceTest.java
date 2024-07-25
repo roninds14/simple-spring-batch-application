@@ -37,7 +37,9 @@ public class LoadServiceTest {
         setService(
                 Mockito.mock(
                         LoadService.class,
-                        Mockito.withSettings().useConstructor().defaultAnswer(Mockito.CALLS_REAL_METHODS)
+                        Mockito.withSettings()
+                                .useConstructor()
+                                .defaultAnswer(Mockito.CALLS_REAL_METHODS)
                 )
         );
 
